@@ -79,6 +79,21 @@ missao.forEach( function(missao){
         botaoDetalhes.setAttribute
         ("aria-expanded", "false");
         botaoDetalhes.textContent = "Ver detalhes"
-    }})
+    }
+});
+
+botaoSelecionar.addEventListener("click", function(){
+    let selecionado = missao.classList.toggle("selecionada");
+
+    botaoSelecionar.setAttribute("aria-pressed", selecionado)
+
+    if(selecionado){
+        botaoSelecionar.textContent = "Selecionada"
+    }
+    else {
+        botaoSelecionar.textContent = "Selecionar missão"
+    }
+})
+
 });
 
