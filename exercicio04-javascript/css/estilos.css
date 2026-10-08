@@ -94,6 +94,10 @@ button:hover {
 
 /* Classe utilizada pelo desafio */
 
+.botao-selecionar {
+    min-width: 51%;
+}
+
 .missao.selecionada {
     border-color: #f59e0b;
     transform: translateY(-4px);
@@ -120,5 +124,6 @@ footer {
     .missao {
         flex: 1;
     }
+
 
 }
